@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 97%;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -20,7 +20,10 @@
   color: #c7c5bd;
   text-decoration: none;
 }
-
+.navbar-links {
+  position: relative;
+  right: 50px;
+}
 .navbar-links a {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
