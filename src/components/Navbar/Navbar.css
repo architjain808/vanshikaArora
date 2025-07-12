@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;700&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #131211;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97%;
+  z-index: 1000;
+}
+
+.navbar-logo a {
+  font-family: "Cyriele", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #c7c5bd;
+  text-decoration: none;
+}
+
+.navbar-links a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9a9082;
+  text-decoration: none;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #c7c5bd;
+}
+
+.navbar-links a.active {
+  color: #c7c5bd;
+  border-bottom: 1px solid #c7c5bd;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1.5rem 0%;
+  }
+
+  .navbar-logo {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-logo a {
+    font-size: 2rem;
+  }
+
+  .navbar-links a {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+  }
+}

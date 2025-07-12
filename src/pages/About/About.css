@@ -1,0 +1,102 @@
+.about-page {
+  background-color: #131211;
+  color: #c7c5bd;
+  padding-top: 80px; /* Offset for fixed navbar */
+}
+
+.about-hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(100%); /* Black and white filter */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    19,
+    18,
+    17,
+    0.7
+  ); /* Increased opacity for better blending */
+  z-index: 1;
+}
+
+.about-hero h1 {
+  font-family: "Cyriele", serif;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #c7c5bd;
+  z-index: 2;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.about-content-grid {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: flex-start;
+}
+
+.about-text-section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #9a9082;
+  margin-bottom: 2rem;
+}
+
+.about-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.about-image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.about-image-grid img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 3rem;
+  }
+
+  .about-content-grid {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+  }
+
+  .about-text-section p {
+    font-size: 1rem;
+  }
+
+  .about-image-grid {
+    grid-template-columns: 1fr;
+  }
+}
