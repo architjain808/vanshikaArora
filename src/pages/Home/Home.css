@@ -4,7 +4,13 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #131211;
+  /* background-color: #131211; */
+  background: #c7c5bd;
+  background: linear-gradient(
+    180deg,
+    rgba(199, 197, 189, 1) 10%,
+    rgba(19, 18, 17, 1) 60%
+  );
   padding-top: 80px; /* Offset for fixed navbar */
   overflow: hidden;
 }

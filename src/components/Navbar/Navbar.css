@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
-  background-color: #131211;
+  background-color: #c7c5bd;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
   font-family: "Cyriele", serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #c7c5bd;
+  color: #131211;
   text-decoration: none;
 }
 .navbar-links {
@@ -33,19 +33,19 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #9a9082;
+  color: #13121192;
   text-decoration: none;
   margin-left: 1rem;
   transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #c7c5bd;
+  color: #131211;
 }
 
 .navbar-links a.active {
-  color: #c7c5bd;
-  border-bottom: 1px solid #c7c5bd;
+  color: #131211;
+  border-bottom: 1px solid #131211;
 }
 
 @media (max-width: 768px) {
